@@ -30,7 +30,7 @@ class Complex
         System.out.println(temp.a+c+t+"i");
     }
 }
-class l3q1
+class q1
 {
     public static void main(String[] args)
     {

@@ -109,7 +109,7 @@ class Time
     }
  }
 }
-class l3q2
+class q2
 {
     public static void main(String[] args)
     {
