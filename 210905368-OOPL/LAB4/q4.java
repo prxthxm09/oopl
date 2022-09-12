@@ -15,9 +15,6 @@ class q4
     {
         Counter c1 = new Counter();
         Counter c2 = new Counter();
-        Counter c3 = new Counter();
-        Counter c4 = new Counter();
-        int cc = Counter.showCount();
-        System.out.println("Number of objects are "+cc);
+        System.out.println("Number of objects are "+Counter.showCount());
     }
 }

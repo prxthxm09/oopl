@@ -11,9 +11,9 @@ class Bank_Account
     {
         Random r1 = new Random();
         account_name = "Dark Lord";
-        account_number = r1.nextLong();
+        account_number = Math.abs(r1.nextLong());
         account_type = "SB";
-        account_balance = 1000000000;
+        account_balance = 1000000;
     }
     Bank_Account(String name , String type , double balance)
     {
@@ -54,10 +54,7 @@ class q3
         Scanner sc = new Scanner(System.in);
         Bank_Account b1 = new Bank_Account();
         System.out.println("Enter account name , type , balance ");
-        String name = sc.next();
-        String type = sc.next();
-        double balance = sc.nextDouble();
-        Bank_Account b2 = new Bank_Account(name,type,balance);
+        Bank_Account b2 = new Bank_Account(sc.next(),sc.next(),sc.nextDouble());
         b1.Display();
         b2.Display();
         b2.Withdraw(10000);
