@@ -19,7 +19,7 @@ class Bank_Account
     {
         Random r1 = new Random();
         account_name =name;
-        account_number = r1.nextLong();
+        account_number = Math.abs(r1.nextLong());
         account_type = type;
         account_balance  =balance;
     }
@@ -47,7 +47,7 @@ class Bank_Account
         System.out.println("Interest is "+rate);
     }
 }
-class l4q3
+class q3
 {
     public static void main(String[] args)
     {

@@ -9,7 +9,7 @@ class Counter
         return (Counter.count);
     }
 }
-class l4q4
+class q4
 {
     public static void main(String[] args)
     {

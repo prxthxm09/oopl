@@ -21,7 +21,7 @@ class Time
         System.out.println("Time is "+hh+":"+mm+":"+ss);
     }
 }
-class l4q2
+class q2
 {
     public static void main(String[] args)
     {
