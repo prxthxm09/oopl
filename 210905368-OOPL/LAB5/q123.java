@@ -112,6 +112,38 @@ class Student
 			}
 		}
 	}
+	static String manipulateName(String str)
+	{
+        int len = str.length();
+        str = str.trim();
+        String t = "";
+        for (int i = 0; i < len; i++)
+		{
+            char ch = str.charAt(i);
+            if (ch != ' ')
+			{
+                t = t + ch;
+            }
+            else
+			{
+                System.out.print(Character.toUpperCase(t.charAt(0))+ ". ");
+                t = "";
+            }
+        }
+        String temp = "";
+        for (int j = 0; j < t.length(); j++)
+		{
+            if (j == 0)
+			{
+                temp = temp + Character.toUpperCase(t.charAt(0));
+			}
+            else
+			{
+                temp = temp + Character.toLowerCase(t.charAt(j));
+			}
+        }
+        return temp;
+    }
 }
 class q123
 {
@@ -148,5 +180,10 @@ class q123
 		}
 		Student.list1(s);
 		Student.list2(s);
+		for(int i=0;i<n;i++)
+		{
+			s[i].f_name = Student.manipulateName(s[i].f_name);
+			System.out.println(s[i].f_name);
+		}
 	}
 }
