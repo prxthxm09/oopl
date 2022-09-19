@@ -137,16 +137,16 @@ class q123
 			double cgpa=Student.sc.nextDouble();
 			s[i] = new Student(name,cal,sem,gpa,cgpa);
 		}
-		// for(int i=0;i<n;i++)
-		// {
-		// 	s[i].Display();
-		// }
-		// Student.sort(s);
-		// for(int i=0;i<n;i++)
-		// {
-		// 	s[i].Display();
-		// }
-		// Student.list1(s);
-		// Student.list2(s);
+		for(int i=0;i<n;i++)
+		{
+			s[i].Display();
+		}
+		Student.sort(s);
+		for(int i=0;i<n;i++)
+		{
+			s[i].Display();
+		}
+		Student.list1(s);
+		Student.list2(s);
 	}
 }
