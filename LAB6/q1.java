@@ -38,7 +38,7 @@ class q1
 {
     public static void main(String[] args)
     {
-        college_graduate cg1 = new college_graduate("MIHR",new GregorianCalendar(2003,9,25),9.5,4);
+        college_graduate cg1 = new college_graduate("MIHIR",new GregorianCalendar(2003,9,25),9.5,4);
         cg1.display();
     }
 }
